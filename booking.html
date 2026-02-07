@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Booking — House of the Barbers INC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-booking">
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="brand-badge compact">
+          <div class="brand-top">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <span class="brand-title">House of the Barbers INC</span>
+          </div>
+          <div class="brand-bottom one-line">
+            <span class="brand-sub">Booking</span>
+            <span class="brand-tag">Demo</span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="nav nav-desktop" aria-label="Primary">
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink is-active" href="booking.html">Booking</a>
+        <a class="navlink" href="pricing.html">Pricing</a>
+        <a class="navlink" href="index.html#location">Location</a>
+        <a class="navlink" href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-kicker">Choose Date & Time</div>
+        <h1 class="page-title">Appointments</h1>
+
+        <div class="booking-shell">
+          <div class="booking-block">
+            <div class="block-head">
+              <h3>October</h3>
+              <button class="icon-btn" type="button" aria-label="Options">≡</button>
+            </div>
+
+            <div class="date-row" role="listbox" aria-label="Dates">
+              <button class="chip" type="button" data-date="Sun 02"><span class="d">Sun</span><span class="n">02</span></button>
+              <button class="chip" type="button" data-date="Mon 03"><span class="d">Mon</span><span class="n">03</span></button>
+              <button class="chip" type="button" data-date="Tue 04"><span class="d">Tue</span><span class="n">04</span></button>
+              <button class="chip is-selected" type="button" data-date="Wed 05"><span class="d">Wed</span><span class="n">05</span></button>
+              <button class="chip" type="button" data-date="Thu 06"><span class="d">Thu</span><span class="n">06</span></button>
+              <button class="chip" type="button" data-date="Fri 07"><span class="d">Fri</span><span class="n">07</span></button>
+              <button class="chip" type="button" data-date="Sat 08"><span class="d">Sat</span><span class="n">08</span></button>
+            </div>
+
+            <h4 class="block-sub">Morning</h4>
+            <div class="time-row" role="listbox" aria-label="Times">
+              <button class="time" type="button" data-time="09:00 AM">09:00 AM</button>
+              <button class="time is-selected" type="button" data-time="09:30 AM">09:30 AM</button>
+              <button class="time" type="button" data-time="10:00 AM">10:00 AM</button>
+              <button class="time" type="button" data-time="10:30 AM">10:30 AM</button>
+            </div>
+
+            <div class="choose-head">
+              <h4>Choose Specialist</h4>
+              <a class="tiny-link" href="index.html#contact">See all</a>
+            </div>
+
+            <div class="barber-row" role="listbox" aria-label="Barbers">
+              <button class="barber is-selected" type="button" data-barber="Jose">
+                <span class="avatar">J</span>
+                <span class="bname">Jose</span>
+              </button>
+              <button class="barber" type="button" data-barber="Chris">
+                <span class="avatar">C</span>
+                <span class="bname">Chris</span>
+              </button>
+              <button class="barber" type="button" data-barber="David">
+                <span class="avatar">D</span>
+                <span class="bname">David</span>
+              </button>
+              <button class="barber" type="button" data-barber="Alex">
+                <span class="avatar">A</span>
+                <span class="bname">Alex</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="confirm-card">
+            <div class="confirm-top">
+              <div class="pill-lite">
+                <span class="mini-ic" aria-hidden="true">📅</span>
+                <span id="selDate">Wed 05</span>
+              </div>
+              <div class="pill-lite">
+                <span class="mini-ic" aria-hidden="true">⏱</span>
+                <span id="selTime">09:30 AM</span>
+              </div>
+              <div class="pill-lite">
+                <span class="mini-ic" aria-hidden="true">💈</span>
+                <span id="selBarber">Jose</span>
+              </div>
+            </div>
+
+            <p class="confirm-text">
+              Confirm your booking details and get ready for a smooth barbershop experience.
+            </p>
+
+            <button class="btn-accent wide" id="confirmBtn" type="button">
+              <span class="btn-ic" aria-hidden="true">📌</span>
+              Book Now
+            </button>
+
+            <p class="fineprint">Demo only — no appointment is actually created.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">A DEMO ONLY — Designed by <strong>BASIT</strong></div>
+    </footer>
+
+    <!-- Mobile bottom nav -->
+    <nav class="nav-bottom" aria-label="Bottom navigation">
+      <a class="bnav" href="index.html" aria-label="Home">
+        <span class="bicon" aria-hidden="true">⌂</span>
+        <span class="blabel">Home</span>
+      </a>
+      <a class="bnav is-active" href="booking.html" aria-label="Booking">
+        <span class="bicon" aria-hidden="true">📅</span>
+        <span class="blabel">Booking</span>
+      </a>
+      <a class="bnav" href="pricing.html" aria-label="Pricing">
+        <span class="bicon" aria-hidden="true">$</span>
+        <span class="blabel">Pricing</span>
+      </a>
+      <a class="bnav" href="index.html#contact" aria-label="Contact">
+        <span class="bicon" aria-hidden="true">✉</span>
+        <span class="blabel">Contact</span>
+      </a>
+    </nav>
+
+    <!-- Confirmation modal -->
+    <div class="modal" id="confirmModal" aria-hidden="true">
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+        <h3 id="confirmTitle">Booking Requested</h3>
+        <p id="confirmSummary">Demo confirmation.</p>
+        <div class="modal-actions">
+          <button class="btn solid" id="closeConfirm" type="button">OK</button>
+          <a class="btn ghost" href="pricing.html">View Pricing</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
