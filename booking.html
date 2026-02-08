@@ -1,161 +1,210 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Booking — House of the Barbers INC</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Booking — House of the Barbers INC</title><link rel="stylesheet" href="assets/styles.css"/></head>
+<body><main class="app">
+<header class="topbar">
+<a class="brand" href="index.html" aria-label="Home"><div class="brand-badge">
+<div class="brand-top"><span class="brand-dot" aria-hidden="true"></span><span class="brand-title">House of the Barbers INC</span></div>
+<div class="brand-divider" aria-hidden="true"></div>
+<div class="brand-bottom"><span class="brand-sub">Booking</span><span class="brand-tag">Demo UI</span></div>
+</div></a>
+<nav class="nav-desktop" aria-label="Primary">
+<a class="navlink" href="index.html">Home</a>
+<a class="navlink is-active" href="booking.html">Booking</a>
+<a class="navlink" href="pricing.html">Pricing</a>
+<a class="navlink" href="location.html">Location</a>
+<a class="navlink" href="contact.html">Contact</a>
+</nav>
+</header>
 
-<body class="page-booking">
-  <main class="app">
-    <header class="topbar">
-      <a class="brand" href="index.html" aria-label="Home">
-        <div class="brand-badge compact">
-          <div class="brand-top">
-            <span class="brand-dot" aria-hidden="true"></span>
-            <span class="brand-title">House of the Barbers INC</span>
-          </div>
-          <div class="brand-bottom one-line">
-            <span class="brand-sub">Booking</span>
-            <span class="brand-tag">Demo</span>
-          </div>
-        </div>
-      </a>
+<section class="section">
+<h2>Choose a Barber</h2>
+<p class="small">Demo only: this shows how the booking flow will look. (No real scheduling yet.)</p>
 
-      <nav class="nav nav-desktop" aria-label="Primary">
-        <a class="navlink" href="index.html">Home</a>
-        <a class="navlink is-active" href="booking.html">Booking</a>
-        <a class="navlink" href="pricing.html">Pricing</a>
-        <a class="navlink" href="index.html#location">Location</a>
-        <a class="navlink" href="index.html#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="page-hero">
-      <div class="page-hero-inner">
-        <div class="page-kicker">Choose Date & Time</div>
-        <h1 class="page-title">Appointments</h1>
-
-        <div class="booking-shell">
-          <div class="booking-block">
-            <div class="block-head">
-              <h3>October</h3>
-              <button class="icon-btn" type="button" aria-label="Options">≡</button>
-            </div>
-
-            <div class="date-row" role="listbox" aria-label="Dates">
-              <button class="chip" type="button" data-date="Sun 02"><span class="d">Sun</span><span class="n">02</span></button>
-              <button class="chip" type="button" data-date="Mon 03"><span class="d">Mon</span><span class="n">03</span></button>
-              <button class="chip" type="button" data-date="Tue 04"><span class="d">Tue</span><span class="n">04</span></button>
-              <button class="chip is-selected" type="button" data-date="Wed 05"><span class="d">Wed</span><span class="n">05</span></button>
-              <button class="chip" type="button" data-date="Thu 06"><span class="d">Thu</span><span class="n">06</span></button>
-              <button class="chip" type="button" data-date="Fri 07"><span class="d">Fri</span><span class="n">07</span></button>
-              <button class="chip" type="button" data-date="Sat 08"><span class="d">Sat</span><span class="n">08</span></button>
-            </div>
-
-            <h4 class="block-sub">Morning</h4>
-            <div class="time-row" role="listbox" aria-label="Times">
-              <button class="time" type="button" data-time="09:00 AM">09:00 AM</button>
-              <button class="time is-selected" type="button" data-time="09:30 AM">09:30 AM</button>
-              <button class="time" type="button" data-time="10:00 AM">10:00 AM</button>
-              <button class="time" type="button" data-time="10:30 AM">10:30 AM</button>
-            </div>
-
-            <div class="choose-head">
-              <h4>Choose Specialist</h4>
-              <a class="tiny-link" href="index.html#contact">See all</a>
-            </div>
-
-            <div class="barber-row" role="listbox" aria-label="Barbers">
-              <button class="barber is-selected" type="button" data-barber="Jose">
-                <span class="avatar">J</span>
-                <span class="bname">Jose</span>
-              </button>
-              <button class="barber" type="button" data-barber="Chris">
-                <span class="avatar">C</span>
-                <span class="bname">Chris</span>
-              </button>
-              <button class="barber" type="button" data-barber="David">
-                <span class="avatar">D</span>
-                <span class="bname">David</span>
-              </button>
-              <button class="barber" type="button" data-barber="Alex">
-                <span class="avatar">A</span>
-                <span class="bname">Alex</span>
-              </button>
-            </div>
-          </div>
-
-          <div class="confirm-card">
-            <div class="confirm-top">
-              <div class="pill-lite">
-                <span class="mini-ic" aria-hidden="true">📅</span>
-                <span id="selDate">Wed 05</span>
-              </div>
-              <div class="pill-lite">
-                <span class="mini-ic" aria-hidden="true">⏱</span>
-                <span id="selTime">09:30 AM</span>
-              </div>
-              <div class="pill-lite">
-                <span class="mini-ic" aria-hidden="true">💈</span>
-                <span id="selBarber">Jose</span>
-              </div>
-            </div>
-
-            <p class="confirm-text">
-              Confirm your booking details and get ready for a smooth barbershop experience.
-            </p>
-
-            <button class="btn-accent wide" id="confirmBtn" type="button">
-              <span class="btn-ic" aria-hidden="true">📌</span>
-              Book Now
-            </button>
-
-            <p class="fineprint">Demo only — no appointment is actually created.</p>
-          </div>
-        </div>
+<div class="accordion" id="barberAccordion">
+  <div class="barber-item">
+    <button class="barber-head" type="button" data-target="b1">
+      <span style="display:flex;align-items:center;gap:10px">
+        <span class="avatar">J</span>
+        <span class="bmeta"><span class="bname">Jose</span><span class="brole"> CLICK HERE FOR CALENDER DEMO</span></span>
+      </span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="barber-body" id="b1">
+      <p>Sharp fades & crisp lineups. View work on Instagram. Booking connects to Calendly per barber.</p>
+      <div class="actions">
+        <a class="chip" href="https://instagram.com/j_cuts_777" target="_blank" rel="noreferrer">Instagram</a>
+        <a class="chip" href="#" data-cal-link="PASTE_JOSE_CALENDLY_LINK_HERE">Open Calendly</a>
       </div>
-    </section>
 
-    <footer class="footer">
-      <div class="footer-inner">A DEMO ONLY — Designed by <strong>BASIT</strong></div>
-    </footer>
-
-    <!-- Mobile bottom nav -->
-    <nav class="nav-bottom" aria-label="Bottom navigation">
-      <a class="bnav" href="index.html" aria-label="Home">
-        <span class="bicon" aria-hidden="true">⌂</span>
-        <span class="blabel">Home</span>
-      </a>
-      <a class="bnav is-active" href="booking.html" aria-label="Booking">
-        <span class="bicon" aria-hidden="true">📅</span>
-        <span class="blabel">Booking</span>
-      </a>
-      <a class="bnav" href="pricing.html" aria-label="Pricing">
-        <span class="bicon" aria-hidden="true">$</span>
-        <span class="blabel">Pricing</span>
-      </a>
-      <a class="bnav" href="index.html#contact" aria-label="Contact">
-        <span class="bicon" aria-hidden="true">✉</span>
-        <span class="blabel">Contact</span>
-      </a>
-    </nav>
-
-    <!-- Confirmation modal -->
-    <div class="modal" id="confirmModal" aria-hidden="true">
-      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
-        <h3 id="confirmTitle">Booking Requested</h3>
-        <p id="confirmSummary">Demo confirmation.</p>
-        <div class="modal-actions">
-          <button class="btn solid" id="closeConfirm" type="button">OK</button>
-          <a class="btn ghost" href="pricing.html">View Pricing</a>
+      <div class="demo-wrap" aria-label="Booking demo preview">
+        <div class="demo-head"><div class="ttl">Appointment Preview</div><div class="meta">October 2026</div></div>
+        <div class="cal-grid"><div class="cal-week"><div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div></div>
+<div class="cal-days">
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day">01</div>
+<div class="day">02</div>
+<div class="day">03</div>
+<div class="day">04</div>
+<div class="day is-selected">05</div>
+<div class="day">06</div>
+<div class="day">07</div>
+<div class="day">08</div>
+<div class="day">09</div>
+<div class="day">10</div>
+<div class="day">11</div>
+<div class="day">12</div>
+<div class="day">13</div>
+<div class="day">14</div>
+<div class="day">15</div>
+<div class="day">16</div>
+<div class="day">17</div>
+<div class="day">18</div>
+<div class="day">19</div>
+<div class="day">20</div>
+<div class="day">21</div>
+<div class="day">22</div>
+<div class="day">23</div>
+<div class="day">24</div>
+<div class="day">25</div>
+<div class="day">26</div>
+<div class="day">27</div>
+<div class="day">28</div>
+<div class="day">29</div>
+<div class="day">30</div>
+<div class="day">31</div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+<div class="day is-muted"> </div>
+</div></div>
+        <div class="demo-bottom">
+          <div class="pane">
+            <h4>Selected Details</h4>
+            <div class="line"><span>Barber</span><span><strong>Jose</strong></span></div>
+            <div class="line"><span>Service</span><span><strong>Shave</strong></span></div>
+<!--            <div class="line"><span>Service</span><span><span class="tag">Shave</span></span></div>-->
+            <div class="line"><span>Date</span><span><strong>Wed, Oct 05</strong></span></div>
+            <div class="line"><span>Time</span><span><strong>09:30 AM</strong></span></div>
+          </div>
+          <div class="pane">
+            <h4>Time & Customer</h4>
+            <div class="times">
+              <span class="time">09:00 AM</span>
+              <span class="time is-selected">09:30 AM</span>
+              <span class="time">10:00 AM</span>
+              <span class="time">10:30 AM</span>
+            </div>
+            <div style="height:10px"></div>
+            <div class="line"><span>Name</span><span><strong>John Customer</strong></span></div>
+            <div class="line"><span>Phone</span><span><strong>(619) 555-0123</strong></span></div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-  </main>
+  <div class="barber-item">
+    <button class="barber-head" type="button" data-target="b2">
+      <span style="display:flex;align-items:center;gap:10px">
+        <span class="avatar">C</span>
+        <span class="bmeta"><span class="bname">Chris</span><span class="brole">-Classic • Tapers</span></span>
+      </span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="barber-body" id="b2">
+      <p>Classic cuts + clean tapers.</p>
+      <div class="actions">
+        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
+        <a class="chip" href="#" data-cal-link="PASTE_CHRIS_CALENDLY_LINK_HERE">Open Calendly</a>
+      </div>
+    </div>
+  </div>
 
-  <script src="assets/script.js"></script>
-</body>
-</html>
+  <div class="barber-item">
+    <button class="barber-head" type="button" data-target="b3">
+      <span style="display:flex;align-items:center;gap:10px">
+        <span class="avatar">D</span>
+        <span class="bmeta"><span class="bname">David</span><span class="brole">-Beards • Detail</span></span>
+      </span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="barber-body" id="b3">
+      <p>Beard trims + detail finishing.</p>
+      <div class="actions">
+        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
+        <a class="chip" href="#" data-cal-link="PASTE_DAVID_CALENDLY_LINK_HERE">Open Calendly</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="barber-item">
+    <button class="barber-head" type="button" data-target="b4">
+      <span style="display:flex;align-items:center;gap:10px">
+        <span class="avatar">A</span>
+        <span class="bmeta"><span class="bname">Alex Jr.</span><span class="brole">-Fades • Texture</span></span>
+      </span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="barber-body" id="b4">
+      <p>Modern styles with texture and clean blends.</p>
+      <div class="actions">
+        <a class="chip" href="https://instagram.com/ca_gd222" target="_blank" rel="noreferrer">Instagram</a>
+        <a class="chip" href="#" data-cal-link="PASTE_ALEXJR_CALENDLY_LINK_HERE">Open Calendly</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="barber-item">
+    <button class="barber-head" type="button" data-target="b5">
+      <span style="display:flex;align-items:center;gap:10px">
+        <span class="avatar">A</span>
+        <span class="bmeta"><span class="bname">Alex</span><span class="brole">-Fades • Shaves</span></span>
+      </span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="barber-body" id="b5">
+      <p>Clean fades and smooth finishing.</p>
+      <div class="actions">
+        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
+        <a class="chip" href="#" data-cal-link="PASTE_ALEX_CALENDLY_LINK_HERE">Open Calendly</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="barber-item">
+    <button class="barber-head" type="button" data-target="b6">
+      <span style="display:flex;align-items:center;gap:10px">
+        <span class="avatar">O</span>
+        <span class="bmeta"><span class="bname">Omar</span><span class="brole">-All Styles</span></span>
+      </span>
+      <span class="chev">▾</span>
+    </button>
+    <div class="barber-body" id="b6">
+      <p>Versatile barber — great with multiple styles and requests.</p>
+      <div class="actions">
+        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
+        <a class="chip" href="#" data-cal-link="PASTE_OMAR_CALENDLY_LINK_HERE">Open Calendly</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer class="footer"><div class="footer-inner">A DEMO ONLY</div></footer>
+
+<nav class="nav-bottom" aria-label="Bottom navigation">
+<a class="bnav" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Home</span></a>
+<a class="bnav is-active" href="booking.html" aria-label="Booking"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h12v18H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 7h12" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 11h8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Booking</span></a>
+<a class="bnav" href="pricing.html" aria-label="Pricing"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M17 7.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5 2.2 3 5 3 5 1.1 5 3-2.2 3.5-5 3.5-5-1.6-5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="blabel">Pricing</span></a>
+<a class="bnav" href="location.html" aria-label="Location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Location</span></a>
+<a class="bnav" href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Contact</span></a>
+</nav>
+
+</main><script src="assets/script.js"></script></body></html>

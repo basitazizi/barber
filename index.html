@@ -1,189 +1,67 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>House of the Barbers INC</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>House of the Barbers INC</title><link rel="stylesheet" href="assets/styles.css"/></head>
+<body><main class="app">
+<header class="topbar">
+<a class="brand" href="index.html" aria-label="Home"><div class="brand-badge">
+<div class="brand-top"><span class="brand-dot" aria-hidden="true"></span><span class="brand-title">House of the Barbers INC</span></div>
+<div class="brand-divider" aria-hidden="true"></div>
+<div class="brand-bottom"><span class="brand-sub">Best Barber in San Diego</span><span class="brand-tag">National City</span></div>
+</div></a>
+<nav class="nav-desktop" aria-label="Primary">
+<a class="navlink is-active" href="index.html">Home</a>
+<a class="navlink" href="booking.html">Booking</a>
+<a class="navlink" href="pricing.html">Pricing</a>
+<a class="navlink" href="location.html">Location</a>
+<a class="navlink" href="contact.html">Contact</a>
+</nav>
+</header>
 
-<body class="page-home">
-  <main class="app">
-    <header class="topbar">
-      <a class="brand" href="index.html" aria-label="Home">
-        <div class="brand-badge">
-          <div class="brand-top">
-            <span class="brand-dot" aria-hidden="true"></span>
-            <span class="brand-title">House of the Barbers INC</span>
-          </div>
-          <div class="brand-divider" aria-hidden="true"></div>
-          <div class="brand-bottom">
-            <span class="brand-sub">Best Barber in San Diego</span>
-            <span class="brand-tag">National City</span>
-          </div>
-        </div>
-      </a>
+<section class="hero">
+<div class="hero-grid">
+<div>
+<h1 class="headline">Best Barber<br/>in San Diego.</h1>
+<p class="sub">Premium cuts, clean fades, sharp lineups, and smooth shaves — crafted for your look and finished with precision.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap">
+<a class="btn btn-solid" href="booking.html">Book an Appointment</a>
+<a class="btn" href="pricing.html">View Pricing</a>
+</div>
+</div>
+<div class="hero-right"><div class="stack">
+<div class="card card-back" aria-hidden="true"></div>
+<div class="card card-main"><img src="assets/barber.jpg" alt="Shop photo"/></div>
+<div class="card card-side" aria-hidden="true"></div>
+</div></div>
+</div>
+</section>
 
-      <nav class="nav nav-desktop" aria-label="Primary">
-        <a class="navlink is-active" href="index.html">Home</a>
-        <a class="navlink" href="booking.html">Booking</a>
-        <a class="navlink" href="pricing.html">Pricing</a>
-        <a class="navlink" href="index.html#location">Location</a>
-        <a class="navlink" href="index.html#contact">Contact</a>
-      </nav>
-    </header>
+<section class="section" id="services">
+<h2>Services</h2>
+<p class="small">Choose your service — then pick your barber on the booking page.</p>
+<div class="svc-grid">
+<article class="svc"><h3>Hair Cuts</h3><p>Regular • Fade • Skin fade • Taper • Line-up</p></article>
+<article class="svc"><h3>Beard Trim</h3><p>Shape • Detail • Line-up • Clean finish</p></article>
+<article class="svc"><h3>Facial</h3><p>Freshen up and reset with a clean facial.</p></article>
+</div>
+</section>
 
-    <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
+<section class="section" id="home-map">
+<h2>Location</h2>
+<p class="small">2754 E 18th St suite 101, National City, CA 91950</p>
+<div class="map-wrap"><iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2754%20E%2018th%20St%20suite%20101,%20National%20City,%20CA%2091950&output=embed"></iframe></div>
+<div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+<a class="btn btn-solid" target="_blank" rel="noreferrer" href="https://maps.app.goo.gl/ax9v3zrZcSie6p259">Open in Google Maps</a>
+<a class="btn" href="contact.html">Contact Info</a>
+</div>
+</section>
 
-      <svg class="wave" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true">
-        <path id="wavePath"
-          d="M0,310 C180,240 320,410 500,330 C670,255 760,120 910,190 C1040,250 1120,370 1200,340"
-          fill="none" stroke="rgba(255,255,255,.42)" stroke-width="1.5"/>
-      </svg>
+<footer class="footer"><div class="footer-inner">A DEMO ONLY</div></footer>
 
-      <div class="hero-grid">
-        <div class="hero-left">
-          <h1 class="headline">Best Barber<br/>in San Diego.</h1>
-<!--          <p class="sub">-->
-<!--            Premium cuts, clean fades, sharp lineups, and smooth shaves — tailored to your style.-->
-<!--            Walk in with confidence. Leave looking elite.-->
-<!--          </p>-->
-
-          <div class="cta-row">
-            <a class="cta-pill" href="booking.html">Book an Appointment</a>
-<!--            <button class="circle-cta" id="openBookModal" type="button" aria-label="Book now">-->
-<!--              <span class="circle-text">Book<br/>Now</span>-->
-<!--            </button>-->
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="stack">
-            <div class="card card-back" aria-hidden="true"></div>
-            <div class="card card-main">
-              <img src="barber.jpg" alt="House of the Barbers photo" />
-            </div>
-            <div class="card card-side" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="section-inner">
-        <div class="section-head">
-          <h2 class="section-title">Services</h2>
-          <p class="section-sub">Quick, clean, and professional — with a premium finish.</p>
-        </div>
-
-        <div class="cards-3">
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">✂</div>
-            <h3>Hair Cuts</h3>
-            <p>Regular cuts, fades, skin fades, tapers, and precision lineups.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">🪒</div>
-            <h3>Beard Trim</h3>
-            <p>Shape, clean up, and detail work to match your haircut perfectly.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon" aria-hidden="true">✨</div>
-            <h3>Facial</h3>
-            <p>Refresh and reset — a clean facial to elevate your look.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="location">
-      <div class="section-inner">
-        <div class="section-head">
-          <h2 class="section-title">Location</h2>
-          <p class="section-sub">2754 E 18th St suite 101, National City, CA 91950</p>
-        </div>
-
-        <div class="map-wrap">
-          <iframe
-            title="House of the Barbers INC — Location Map"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=2754%20E%2018th%20St%20suite%20101,%20National%20City,%20CA%2091950&output=embed">
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="section-inner">
-        <div class="section-head">
-          <h2 class="section-title">Contact</h2>
-          <p class="section-sub">Call, message, or book online. We’ll get you right.</p>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Address</h3>
-            <p>2754 E 18th St suite 101<br/>National City, CA 91950</p>
-          </div>
-
-          <div class="contact-card">
-            <h3>Instagram</h3>
-            <p>
-              Jose: <a href="https://instagram.com/j_cuts_777" target="_blank" rel="noreferrer">@j_cuts_777</a><br/>
-              Alex: <a href="https://instagram.com/ca_gd222" target="_blank" rel="noreferrer">@ca_gd222</a>
-            </p>
-          </div>
-
-<!--          <div class="contact-card">-->
-<!--            <h3>Booking</h3>-->
-<!--            <p>Tap the button below to pick a time and a barber.</p>-->
-<!--            <a class="btn-accent" href="booking.html">Book Now</a>-->
-<!--          </div>-->
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-inner">A DEMO ONLY — Designed by <strong>BASIT</strong></div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal" id="bookModal" aria-hidden="true">
-      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bookTitle">
-        <h3 id="bookTitle">Book Now</h3>
-        <p>This is a demo. Connect this to Cal.com / Square / your custom booking system.</p>
-        <div class="modal-actions">
-          <button class="btn solid" id="closeBookModal" type="button">OK</button>
-          <a class="btn ghost" href="booking.html">Go to Booking</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile bottom nav -->
-    <nav class="nav-bottom" aria-label="Bottom navigation">
-      <a class="bnav is-active" href="index.html" aria-label="Home">
-        <span class="bicon" aria-hidden="true">⌂</span>
-        <span class="blabel">Home</span>
-      </a>
-      <a class="bnav" href="booking.html" aria-label="Booking">
-        <span class="bicon" aria-hidden="true">📅</span>
-        <span class="blabel">Booking</span>
-      </a>
-      <a class="bnav" href="pricing.html" aria-label="Pricing">
-        <span class="bicon" aria-hidden="true">$</span>
-        <span class="blabel">Pricing</span>
-      </a>
-      <a class="bnav" href="index.html#contact" aria-label="Contact">
-        <span class="bicon" aria-hidden="true">✉</span>
-        <span class="blabel">Contact</span>
-      </a>
-    </nav>
-  </main>
-
-  <script src="assets/script.js"></script>
-</body>
-</html>
+<nav class="nav-bottom" aria-label="Bottom navigation">
+<a class="bnav is-active" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Home</span></a>
+<a class="bnav" href="booking.html" aria-label="Booking"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h12v18H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 7h12" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 11h8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Booking</span></a>
+<a class="bnav" href="pricing.html" aria-label="Pricing"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M17 7.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5 2.2 3 5 3 5 1.1 5 3-2.2 3.5-5 3.5-5-1.6-5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="blabel">Pricing</span></a>
+<a class="bnav" href="location.html" aria-label="Location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Location</span></a>
+<a class="bnav" href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Contact</span></a>
+</nav>
+</main><script src="assets/script.js"></script></body></html>
