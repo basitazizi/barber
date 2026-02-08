@@ -17,23 +17,47 @@
 </nav>
 </header>
 
-<section class="hero">
-<div class="hero-grid">
-<div>
-<h1 class="headline">Best Barber<br/>in San Diego.</h1>
-<p class="sub">Premium cuts, clean fades, sharp lineups, and smooth shaves — crafted for your look and finished with precision.</p>
-<div style="display:flex;gap:14px;flex-wrap:wrap">
-<a class="btn btn-solid" href="booking.html">Book an Appointment</a>
-<a class="btn" href="pricing.html">View Pricing</a>
-</div>
-</div>
-<div class="hero-right"><div class="stack">
-<div class="card card-back" aria-hidden="true"></div>
-<div class="card card-main"><img src="assets/barber.jpg" alt="Shop photo"/></div>
-<div class="card card-side" aria-hidden="true"></div>
-</div></div>
-</div>
-</section>
+    <section class="hero">
+        <div class="hero-grid">
+            <!-- LEFT: Text -->
+            <div>
+                <h1 class="headline">Best Barber<br/>in San Diego.</h1>
+
+                <p class="sub">
+                    Premium cuts, clean fades, sharp lineups, and smooth shaves — crafted for your look and finished with precision.
+                </p>
+
+                <div style="display:flex;gap:14px;flex-wrap:wrap">
+                    <a class="btn btn-solid" href="booking.html">Book an Appointment</a>
+                    <a class="btn" href="pricing.html">View Pricing</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Image slider (keeps same "card" look) -->
+            <div class="hero-right">
+                <div class="stack">
+                    <div class="card card-back" aria-hidden="true"></div>
+
+                    <div class="card card-main">
+                        <div class="slider" id="heroSlider">
+                            <img class="slide is-active" src="assets/barber1.jpg" alt="Shop photo 1">
+                            <img class="slide" src="assets/barber2.jpeg" alt="Shop photo 2">
+                            <img class="slide" src="assets/barber3.jpeg" alt="Shop photo 3">
+
+                            <div class="dots" aria-label="Slider dots">
+                                <button class="dot is-active" type="button" aria-label="Slide 1"></button>
+                                <button class="dot" type="button" aria-label="Slide 2"></button>
+                                <button class="dot" type="button" aria-label="Slide 3"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-side" aria-hidden="true"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 <!--<section class="section" id="services">-->
 <!--<h2>Services</h2>-->

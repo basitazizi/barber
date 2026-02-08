@@ -637,3 +637,72 @@ a{ color:inherit; }
     .row-grid{ grid-template-columns:1fr; }
     .demo-bottom{ grid-template-columns:1fr; }
 }
+/*image rotation*/
+
+/* ==========================
+   HERO IMAGE SLIDER (keeps same card look)
+========================== */
+.slider{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transform:scale(1.02);
+    transition:opacity .5s ease, transform .7s ease;
+    display:block;
+}
+
+.slide.is-active{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* Dots (small + clean, matches your style) */
+.dots{
+    position:absolute;
+    left:14px;
+    bottom:14px;
+    display:flex;
+    gap:8px;
+    padding:8px 10px;
+    border-radius:999px;
+    background:rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,.35);
+    background:rgba(255,255,255,.20);
+    cursor:pointer;
+    padding:0;
+}
+
+.dot.is-active{
+    background:#fff;
+}
+.slide{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity .6s ease;
+}
+
+.slide.is-active{
+    opacity:1;
+}
