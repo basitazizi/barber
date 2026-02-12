@@ -12,62 +12,73 @@
 <a class="navlink is-active" href="index.html">Home</a>
 <a class="navlink" href="booking.html">Booking</a>
 <a class="navlink" href="pricing.html">Pricing</a>
-<!--<a class="navlink" href="location.html">Location</a>-->
+<a class="navlink" href="shop.html">Shop</a>
 <a class="navlink" href="contact.html">Contact</a>
 </nav>
 </header>
 
-    <section class="hero">
-        <div class="hero-grid">
-            <!-- LEFT: Text -->
-            <div>
-                <h1 class="headline">Best Barber<br/>in San Diego.</h1>
+<section class="hero home-hero">
+<div class="hero-grid">
+<div>
+<h1 class="headline">Best Barber<br/>in San Diego.</h1>
+<p class="sub">Premium cuts, clean fades, sharp lineups, and smooth shaves crafted for your look and finished with precision.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap">
+<a class="btn btn-solid" href="booking.html">Book an Appointment</a>
+<a class="btn" href="pricing.html">View Pricing</a>
+</div>
+<div class="hero-pills">
+<!--<span class="hero-pill">Walk-ins Welcome</span>-->
+<!--<span class="hero-pill">Premium Grooming</span>-->
+<!--<span class="hero-pill">Fast Booking Flow</span>-->
+</div>
+</div>
 
-                <p class="sub">
-                    Premium cuts, clean fades, sharp lineups, and smooth shaves — crafted for your look and finished with precision.
-                </p>
+<div class="hero-right">
+<div class="stack">
+<div class="card card-back" aria-hidden="true"></div>
+<div class="card card-main" data-tilt>
+<div class="slider" id="heroSlider">
+<img class="slide is-active" src="assets/barber1.jpg" alt="Shop photo 1">
+<img class="slide" src="assets/WhatsApp Image 2026-02-11 at 6.21.52 PM.jpeg" alt="Shop photo 2">
+<img class="slide" src="assets/WhatsApp Image 2026-02-11 at 6.21.52 PM (1).jpeg" alt="Shop photo 3">
+<div class="dots" aria-label="Slider dots">
+<button class="dot is-active" type="button" aria-label="Slide 1"></button>
+<button class="dot" type="button" aria-label="Slide 2"></button>
+<button class="dot" type="button" aria-label="Slide 3"></button>
+</div>
+</div>
+</div>
+<div class="card card-side" aria-hidden="true"></div>
+<div class="hero-orb" aria-hidden="true"></div>
+</div>
+</div>
+</div>
+</section>
 
-                <div style="display:flex;gap:14px;flex-wrap:wrap">
-                    <a class="btn btn-solid" href="booking.html">Book an Appointment</a>
-                    <a class="btn" href="pricing.html">View Pricing</a>
-                </div>
-            </div>
+<section class="section home-metrics">
+<div class="metrics-grid">
+<article class="metric-card" data-tilt><h3 data-count-to="6">0</h3><p>Barbers On Floor</p></article>
+<article class="metric-card" data-tilt><h3 data-count-to="600">0</h3><p>Monthly Clients</p></article>
+<article class="metric-card" data-tilt><h3 data-count-to="9">0</h3><p>Years Of Craft</p></article>
+<article class="metric-card" data-tilt><h3 data-count-to="5">0</h3><p>Star Local Reviews</p></article>
+</div>
+</section>
 
-            <!-- RIGHT: Image slider (keeps same "card" look) -->
-            <div class="hero-right">
-                <div class="stack">
-                    <div class="card card-back" aria-hidden="true"></div>
+<section class="home-marquee" aria-label="Highlights">
+<div class="marquee-track">
+<span>Sharp fades</span><span>Luxury grooming</span><span>Hot towel finishes</span><span>High-precision lineups</span><span>Walk-ins + online booking</span><span>Sharp fades</span><span>Luxury grooming</span>
+</div>
+</section>
 
-                    <div class="card card-main">
-                        <div class="slider" id="heroSlider">
-                            <img class="slide is-active" src="assets/barber1.jpg" alt="Shop photo 1">
-                            <img class="slide" src="assets/barber2.jpeg" alt="Shop photo 2">
-                            <img class="slide" src="assets/barber3.jpeg" alt="Shop photo 3">
-
-                            <div class="dots" aria-label="Slider dots">
-                                <button class="dot is-active" type="button" aria-label="Slide 1"></button>
-                                <button class="dot" type="button" aria-label="Slide 2"></button>
-                                <button class="dot" type="button" aria-label="Slide 3"></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-side" aria-hidden="true"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!--<section class="section" id="services">-->
-<!--<h2>Services</h2>-->
-<!--<p class="small">Choose your service — then pick your barber on the booking page.</p>-->
-<!--<div class="svc-grid">-->
-<!--<article class="svc"><h3>Hair Cuts</h3><p>Regular • Fade • Skin fade • Taper • Line-up</p></article>-->
-<!--<article class="svc"><h3>Beard Trim</h3><p>Shape • Detail • Line-up • Clean finish</p></article>-->
-<!--<article class="svc"><h3>Facial</h3><p>Freshen up and reset with a clean facial.</p></article>-->
-<!--</div>-->
-<!--</section>-->
+<section class="section home-signature">
+<h2>Signature Experience</h2>
+<p class="small">Built to feel clean, premium, and efficient from booking to final mirror check.</p>
+<div class="signature-grid">
+<article class="signature-card" data-tilt><h3>Consult First</h3><p>Quick consult on style, texture, and face shape before your cut starts.</p></article>
+<article class="signature-card" data-tilt><h3>Precision Flow</h3><p>Structured fade sequence and detailing for consistent top-tier results.</p></article>
+<article class="signature-card" data-tilt><h3>Finish Ritual</h3><p>Clean lines, product set, and mirror review so you leave camera-ready.</p></article>
+</div>
+</section>
 
 <section class="section" id="home-map">
 <h2>Location</h2>
@@ -85,7 +96,7 @@
 <a class="bnav is-active" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Home</span></a>
 <a class="bnav" href="booking.html" aria-label="Booking"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h12v18H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 7h12" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 11h8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Booking</span></a>
 <a class="bnav" href="pricing.html" aria-label="Pricing"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M17 7.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5 2.2 3 5 3 5 1.1 5 3-2.2 3.5-5 3.5-5-1.6-5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="blabel">Pricing</span></a>
-<!--<a class="bnav" href="location.html" aria-label="Location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Location</span></a>-->
+<a class="bnav" href="shop.html" aria-label="Shop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 1 1 6 0v3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="blabel">Shop</span></a>
 <a class="bnav" href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Contact</span></a>
 </nav>
 </main><script src="assets/script.js"></script></body></html>

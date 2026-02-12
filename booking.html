@@ -1,199 +1,89 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Booking — House of the Barbers INC</title><link rel="stylesheet" href="assets/styles.css"/></head>
+<title>Booking - House of the Barbers INC</title><link rel="stylesheet" href="assets/styles.css"/></head>
 <body><main class="app">
 <header class="topbar">
 <a class="brand" href="index.html" aria-label="Home"><div class="brand-badge">
 <div class="brand-top"><span class="brand-dot" aria-hidden="true"></span><span class="brand-title">House of the Barbers INC</span></div>
 <div class="brand-divider" aria-hidden="true"></div>
-<div class="brand-bottom"><span class="brand-sub">Booking</span><span class="brand-tag">Demo UI</span></div>
+<div class="brand-bottom"><span class="brand-sub">Booking</span><span class="brand-tag">Premium</span></div>
 </div></a>
 <nav class="nav-desktop" aria-label="Primary">
 <a class="navlink" href="index.html">Home</a>
 <a class="navlink is-active" href="booking.html">Booking</a>
 <a class="navlink" href="pricing.html">Pricing</a>
-<a class="navlink" href="location.html">Location</a>
+<a class="navlink" href="shop.html">Shop</a>
 <a class="navlink" href="contact.html">Contact</a>
 </nav>
 </header>
 
-<section class="section">
-<h2>Choose a Barber</h2>
-<p class="small">Demo only: this shows how the booking flow will look. (No real scheduling yet.)</p>
+<section class="section booking-section">
+<h2>Book Your Barber</h2>
+<p class="small">Click a barber name to open their calendar and Instagram directly under their profile.</p>
 
-<div class="accordion" id="barberAccordion">
-  <div class="barber-item">
-    <button class="barber-head" type="button" data-target="b1">
-      <span style="display:flex;align-items:center;gap:10px">
-        <span class="avatar">J</span>
-        <span class="bmeta"><span class="bname">Jose</span><span class="brole"> CLICK HERE FOR CALENDER DEMO</span></span>
-      </span>
-      <span class="chev">▾</span>
-    </button>
-    <div class="barber-body" id="b1">
-      <p>Sharp fades & crisp lineups. View work on Instagram. Booking connects to Calendly per barber.</p>
-      <div class="actions">
-        <a class="chip" href="https://instagram.com/j_cuts_777" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="chip" href="#" data-cal-link="PASTE_JOSE_CALENDLY_LINK_HERE">Open Calendly</a>
-      </div>
+<div class="booking-inline-list" id="bookingInlineList" aria-label="Barber roster">
+<article class="booking-inline-item" data-inline-item="chris">
+<button class="booking-inline-head" type="button" data-inline-toggle="chris">
+<span style="display:flex;align-items:center;gap:10px">
+<span class="avatar">C</span>
+<span class="tile-meta"><span class="tile-name">Chris</span><span class="tile-role">Skin fades - Texture - Precision</span></span>
+</span>
+<span class="tile-pill">Top Pick</span>
+</button>
+<div class="booking-inline-panel" data-inline-panel="chris">
+<div class="booking-panel-head">
+<div><h3>Chris</h3><p>Skin fades, texture work, and precision finishing.</p></div>
+<div class="booking-actions">
+<a class="chip chip-spotlight" href="https://www.instagram.com/_chris_thebarber__/" target="_blank" rel="noreferrer">Instagram</a>
+<a class="chip" href="#" data-cal-link="PASTE_CHRIS_CALENDLY_LINK_HERE">Book Chris (Calendly)</a>
+</div>
+</div>
+<div class="cal-inline-shell" aria-label="Chris booking calendar">
+<div class="cal-inline-head"><h4>Chris Availability</h4><span></span></div>
+<div id="my-cal-inline-chris" class="cal-inline-frame"></div>
+</div>
+</div>
+</article>
 
-      <div class="demo-wrap" aria-label="Booking demo preview">
-        <div class="demo-head"><div class="ttl">Appointment Preview</div><div class="meta">October 2026</div></div>
-        <div class="cal-grid"><div class="cal-week"><div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div></div>
-<div class="cal-days">
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day">01</div>
-<div class="day">02</div>
-<div class="day">03</div>
-<div class="day">04</div>
-<div class="day is-selected">05</div>
-<div class="day">06</div>
-<div class="day">07</div>
-<div class="day">08</div>
-<div class="day">09</div>
-<div class="day">10</div>
-<div class="day">11</div>
-<div class="day">12</div>
-<div class="day">13</div>
-<div class="day">14</div>
-<div class="day">15</div>
-<div class="day">16</div>
-<div class="day">17</div>
-<div class="day">18</div>
-<div class="day">19</div>
-<div class="day">20</div>
-<div class="day">21</div>
-<div class="day">22</div>
-<div class="day">23</div>
-<div class="day">24</div>
-<div class="day">25</div>
-<div class="day">26</div>
-<div class="day">27</div>
-<div class="day">28</div>
-<div class="day">29</div>
-<div class="day">30</div>
-<div class="day">31</div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-<div class="day is-muted"> </div>
-</div></div>
-        <div class="demo-bottom">
-          <div class="pane">
-            <h4>Selected Details</h4>
-            <div class="line"><span>Barber</span><span><strong>Jose</strong></span></div>
-            <div class="line"><span>Service</span><span><strong>Shave</strong></span></div>
-<!--            <div class="line"><span>Service</span><span><span class="tag">Shave</span></span></div>-->
-            <div class="line"><span>Date</span><span><strong>Wed, Oct 05</strong></span></div>
-            <div class="line"><span>Time</span><span><strong>09:30 AM</strong></span></div>
-          </div>
-          <div class="pane">
-            <h4>Time & Customer</h4>
-            <div class="times">
-              <span class="time">09:00 AM</span>
-              <span class="time is-selected">09:30 AM</span>
-              <span class="time">10:00 AM</span>
-              <span class="time">10:30 AM</span>
-            </div>
-            <div style="height:10px"></div>
-            <div class="line"><span>Name</span><span><strong>John Customer</strong></span></div>
-            <div class="line"><span>Phone</span><span><strong>(619) 555-0123</strong></span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<article class="booking-inline-item" data-inline-item="cheo">
+<button class="booking-inline-head" type="button" data-inline-toggle="cheo">
+<span style="display:flex;align-items:center;gap:10px">
+<span class="avatar">C</span>
+<span class="tile-meta"><span class="tile-name">Cheo</span><span class="tile-role">Classic cuts - Tapers - Detail</span></span>
+</span>
+<span class="tile-pill">Popular</span>
+</button>
+<div class="booking-inline-panel" data-inline-panel="cheo">
+<div class="booking-panel-head">
+<div><h3>Cheo</h3><p>Classic cuts and smooth blends with clean detail work.</p></div>
+<div class="booking-actions"><a class="chip" href="#" data-cal-link="PASTE_CHEO_INSTAGRAM_HERE">Instagram</a></div>
+</div>
+<div class="cal-inline-shell" aria-label="Cheo booking calendar">
+<div class="cal-inline-head"><h4>Cheo Availability</h4><span></span></div>
+<div id="my-cal-inline-cheo" class="cal-inline-frame"></div>
+</div>
+</div>
+</article>
 
-  <div class="barber-item">
-    <button class="barber-head" type="button" data-target="b2">
-      <span style="display:flex;align-items:center;gap:10px">
-        <span class="avatar">C</span>
-        <span class="bmeta"><span class="bname">Chris</span><span class="brole">-Classic • Tapers</span></span>
-      </span>
-      <span class="chev">▾</span>
-    </button>
-    <div class="barber-body" id="b2">
-      <p>Classic cuts + clean tapers.</p>
-      <div class="actions">
-        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
-        <a class="chip" href="#" data-cal-link="PASTE_CHRIS_CALENDLY_LINK_HERE">Open Calendly</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="barber-item">
-    <button class="barber-head" type="button" data-target="b3">
-      <span style="display:flex;align-items:center;gap:10px">
-        <span class="avatar">D</span>
-        <span class="bmeta"><span class="bname">David</span><span class="brole">-Beards • Detail</span></span>
-      </span>
-      <span class="chev">▾</span>
-    </button>
-    <div class="barber-body" id="b3">
-      <p>Beard trims + detail finishing.</p>
-      <div class="actions">
-        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
-        <a class="chip" href="#" data-cal-link="PASTE_DAVID_CALENDLY_LINK_HERE">Open Calendly</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="barber-item">
-    <button class="barber-head" type="button" data-target="b4">
-      <span style="display:flex;align-items:center;gap:10px">
-        <span class="avatar">A</span>
-        <span class="bmeta"><span class="bname">Alex Jr.</span><span class="brole">-Fades • Texture</span></span>
-      </span>
-      <span class="chev">▾</span>
-    </button>
-    <div class="barber-body" id="b4">
-      <p>Modern styles with texture and clean blends.</p>
-      <div class="actions">
-        <a class="chip" href="https://instagram.com/ca_gd222" target="_blank" rel="noreferrer">Instagram</a>
-        <a class="chip" href="#" data-cal-link="PASTE_ALEXJR_CALENDLY_LINK_HERE">Open Calendly</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="barber-item">
-    <button class="barber-head" type="button" data-target="b5">
-      <span style="display:flex;align-items:center;gap:10px">
-        <span class="avatar">A</span>
-        <span class="bmeta"><span class="bname">Alex</span><span class="brole">-Fades • Shaves</span></span>
-      </span>
-      <span class="chev">▾</span>
-    </button>
-    <div class="barber-body" id="b5">
-      <p>Clean fades and smooth finishing.</p>
-      <div class="actions">
-        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
-        <a class="chip" href="#" data-cal-link="PASTE_ALEX_CALENDLY_LINK_HERE">Open Calendly</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="barber-item">
-    <button class="barber-head" type="button" data-target="b6">
-      <span style="display:flex;align-items:center;gap:10px">
-        <span class="avatar">O</span>
-        <span class="bmeta"><span class="bname">Omar</span><span class="brole">-All Styles</span></span>
-      </span>
-      <span class="chev">▾</span>
-    </button>
-    <div class="barber-body" id="b6">
-      <p>Versatile barber — great with multiple styles and requests.</p>
-      <div class="actions">
-        <a class="chip" href="#" target="_blank" rel="noreferrer">Instagram (add)</a>
-        <a class="chip" href="#" data-cal-link="PASTE_OMAR_CALENDLY_LINK_HERE">Open Calendly</a>
-      </div>
-    </div>
-  </div>
+<article class="booking-inline-item" data-inline-item="juan">
+<button class="booking-inline-head" type="button" data-inline-toggle="juan">
+<span style="display:flex;align-items:center;gap:10px">
+<span class="avatar">J</span>
+<span class="tile-meta"><span class="tile-name">Juan</span><span class="tile-role">Lineups - Beards - Styling</span></span>
+</span>
+<span class="tile-pill">Premium</span>
+</button>
+<div class="booking-inline-panel" data-inline-panel="juan">
+<div class="booking-panel-head">
+<div><h3>Juan</h3><p>Lineups, beard work, and polished premium grooming.</p></div>
+<div class="booking-actions"><a class="chip" href="#" data-cal-link="PASTE_JUAN_INSTAGRAM_HERE">Instagram</a></div>
+</div>
+<div class="cal-inline-shell" aria-label="Juan booking calendar">
+<div class="cal-inline-head"><h4>Juan Availability</h4><span></span></div>
+<div id="my-cal-inline-juan" class="cal-inline-frame"></div>
+</div>
+</div>
+</article>
 </div>
 </section>
 
@@ -203,8 +93,72 @@
 <a class="bnav" href="index.html" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Home</span></a>
 <a class="bnav is-active" href="booking.html" aria-label="Booking"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h12v18H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 7h12" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 11h8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Booking</span></a>
 <a class="bnav" href="pricing.html" aria-label="Pricing"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M17 7.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5 2.2 3 5 3 5 1.1 5 3-2.2 3.5-5 3.5-5-1.6-5-3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="blabel">Pricing</span></a>
-<a class="bnav" href="location.html" aria-label="Location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span class="blabel">Location</span></a>
+<a class="bnav" href="shop.html" aria-label="Shop"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 9V6a3 3 0 1 1 6 0v3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="blabel">Shop</span></a>
 <a class="bnav" href="contact.html" aria-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span class="blabel">Contact</span></a>
 </nav>
 
-</main><script src="assets/script.js"></script></body></html>
+</main><script src="assets/script.js"></script>
+<script>
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  const BARBER_BOOKING = {
+    chris: { namespace: "chris", target: "#my-cal-inline-chris", calLink: "abdul-basit-lml9w7/barber" },
+    cheo: { namespace: "cheo", target: "#my-cal-inline-cheo", calLink: "abdul-basit-lml9w7/barber" },
+    juan: { namespace: "juan", target: "#my-cal-inline-juan", calLink: "abdul-basit-lml9w7/barber" }
+  };
+  const loaded = {};
+
+  function ensureBarberLoaded(key) {
+    const cfg = BARBER_BOOKING[key];
+    if (!cfg || loaded[key]) return;
+    Cal("init", cfg.namespace, { origin: "https://app.cal.com" });
+    Cal.ns[cfg.namespace]("inline", {
+      elementOrSelector: cfg.target,
+      config: { layout: "month_view", useSlotsViewOnSmallScreen: true },
+      calLink: cfg.calLink
+    });
+    loaded[key] = true;
+  }
+
+  function activateBarber(key) {
+    const active = document.querySelector('[data-inline-item="' + key + '"]')?.classList.contains("is-active");
+    document.querySelectorAll("[data-inline-item]").forEach((item) => item.classList.remove("is-active"));
+    document.querySelectorAll("[data-inline-panel]").forEach((panel) => panel.classList.remove("is-active"));
+    if (active) return;
+    document.querySelector('[data-inline-item="' + key + '"]')?.classList.add("is-active");
+    document.querySelector('[data-inline-panel="' + key + '"]')?.classList.add("is-active");
+    ensureBarberLoaded(key);
+  }
+
+  document.querySelectorAll("[data-inline-toggle]").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      activateBarber(this.getAttribute("data-inline-toggle"));
+    });
+  });
+</script>
+</body></html>
